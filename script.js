@@ -1,7 +1,7 @@
 fetch('rsv10pt5.json')
   .then(response => response.json())
   .then(cards => {
-    const container = document.getElementById('blackbolt-container');
+    const container = document.getElementById('card-container');
     cards.forEach(card => {
       const div = document.createElement('div');
       div.classList.add('card');
