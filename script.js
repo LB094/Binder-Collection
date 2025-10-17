@@ -11,7 +11,7 @@ fetch('rsv10pt5.json')
         <p><strong>HP:</strong> ${card.hp}</p>
         <p><strong>Type:</strong> ${card.types?.join(', ')}</p>
         <p><strong>Rarity:</strong> ${card.rarity || 'Unknown'}</p>
-        <p><em>${card.flavorText || ''}</em></p>
+        // <p><em>${card.flavorText || ''}</em></p>
       `;
       container.appendChild(div);
     });
