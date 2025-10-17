@@ -6,24 +6,11 @@ fetch('rsv10pt5.json')
       const div = document.createElement('div');
       div.classList.add('card');
       div.innerHTML = `
-        let img = document.createElement("img");
-img.src = card.images?.small;
-img.alt = card.name;
-
-let name = document.createElement("h2");
-name.textContent = card.name;
-
-let hp = document.createElement("p");
-hp.textContent = "HP: " + card.hp;
-
-let type = document.createElement("p");
-type.textContent = "Type: " + card.types;
-
-let rarity = document.createElement("p");
-rarity.textContent = "Rarity: " + card.rarity;
-
-div.append(img, name, hp, type, rarity);
-
+        <img src="${card.images?.small}" alt="${card.name}">
+        <h2>${card.name}</h2>
+        <p><strong>HP:</strong> ${card.hp}</p>
+        <p><strong>Type:</strong> ${card.types?.join(', ')}</p>
+        <p><strong>Rarity:</strong> ${card.rarity || 'Unknown'}</p>
       `;
       container.appendChild(div);
     });
