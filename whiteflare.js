@@ -1,5 +1,4 @@
-fetch('rsv10pt5.json')
-// fetch('zsv10pt5.json')
+fetch('zsv10pt5.json')
   .then(response => response.json())
   .then(cards => {
     const container = document.getElementById('card-container');
