@@ -10,7 +10,7 @@ h1 {
   color: #222;
 }
 
-#card-container {
+#card-container, #whiteflare-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
