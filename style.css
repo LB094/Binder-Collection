@@ -45,52 +45,52 @@ h1 {
 
 /* --- Type-based card backgrounds --- */
 .card.Fire {
-  background: linear-gradient(135deg, #ffffff, #ff6a00);
+  background: linear-gradient(135deg, #ffffff, #ffbf92);
   color: white;
 }
 
 .card.Water {
-  background: linear-gradient(135deg, #ffffff, #0077ff);
+  background: linear-gradient(135deg, #ffffff, #7eabdf);
   color: white;
 }
 
 .card.Grass {
-  background: linear-gradient(135deg, #ffffff, #2ba84a);
+  background: linear-gradient(135deg, #ffffff, #97daa8);
   color: white;
 }
 
 .card.Lightning {
-  background: linear-gradient(135deg, #ffffff, #ffb300);
+  background: linear-gradient(135deg, #ffffff, #f5db9f);
   color: #222;
 }
 
 .card.Psychic {
-  background: linear-gradient(135deg, #ffffff, #7b3cff);
+  background: linear-gradient(135deg, #ffffff, #bfa5f7);
   color: white;
 }
 
 .card.Fighting {
-  background: linear-gradient(135deg, #ffffff, #92400e);
+  background: linear-gradient(135deg, #ffffff, #f2b996);
   color: white;
 }
 
 .card.Darkness {
-  background: linear-gradient(135deg, #ffffff, #000);
+  background: linear-gradient(135deg, #ffffff, #f1a0a0);
   color: white;
 }
 
 .card.Metal {
-  background: linear-gradient(135deg, #ffffff, #4b5563);
+  background: linear-gradient(135deg, #ffffff, #c3d8f5);
   color: white;
 }
 
 .card.Dragon {
-  background: linear-gradient(135deg, #ffffff, #f57c00);
+  background: linear-gradient(135deg, #ffffff, #f4d0ad);
   color: #222;
 }
 
 .card.Fairy {
-  background: linear-gradient(135deg, #ffffff, #ff66cc);
+  background: linear-gradient(135deg, #ffffff, #f6b0df);
   color: #222;
 }
 
