@@ -18,12 +18,10 @@ fetch('zsv10pt5.json')
       `;
       container.appendChild(div);
     });
-  })
-  .catch(error => console.error('Error loading cards:', error));
-
+ 
 
 addCardHoverEffects();
-  
+  })
   .catch(error => console.error('Error loading cards:', error));
 
 
