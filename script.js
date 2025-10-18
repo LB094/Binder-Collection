@@ -18,43 +18,44 @@ fetch('zsv10pt5.json')
       `;
       container.appendChild(div);
     });
- 
+    })
+   .catch(error => console.error('Error loading cards:', error));
+  
 
-addCardHoverEffects();
-  })
-  .catch(error => console.error('Error loading cards:', error));
+// addCardHoverEffects();
+//   })
+//   .catch(error => console.error('Error loading cards:', error));
 
 
-// 💡 Define your hover effect function below the fetch
-function addCardHoverEffects() {
-  document.querySelectorAll('.card').forEach(card => {
-    const img = card.querySelector('img');
+// function addCardHoverEffects() {
+//   document.querySelectorAll('.card').forEach(card => {
+//     const img = card.querySelector('img');
 
-    // Tilt and scale effect
-    card.addEventListener('mousemove', e => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-      const rotateX = ((y - centerY) / centerY) * 5;
-      const rotateY = ((x - centerX) / centerX) * -5;
+//     // Tilt and scale effect
+//     card.addEventListener('mousemove', e => {
+//       const rect = card.getBoundingClientRect();
+//       const x = e.clientX - rect.left;
+//       const y = e.clientY - rect.top;
+//       const centerX = rect.width / 2;
+//       const centerY = rect.height / 2;
+//       const rotateX = ((y - centerY) / centerY) * 5;
+//       const rotateY = ((x - centerX) / centerX) * -5;
 
-      img.style.transform = `scale(1.1) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    });
+//       img.style.transform = `scale(1.1) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+//     });
 
-    // Reset on mouse leave
-    card.addEventListener('mouseleave', () => {
-      img.style.transform = 'scale(1)';
-    });
+//     // Reset on mouse leave
+//     card.addEventListener('mouseleave', () => {
+//       img.style.transform = 'scale(1)';
+//     });
 
-    // Reflection effect
-    card.addEventListener('mousemove', e => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      card.style.setProperty('--x', `${x}px`);
-      card.style.setProperty('--y', `${y}px`);
-    });
-  });
-}
+//     // Reflection effect
+//     card.addEventListener('mousemove', e => {
+//       const rect = card.getBoundingClientRect();
+//       const x = e.clientX - rect.left;
+//       const y = e.clientY - rect.top;
+//       card.style.setProperty('--x', `${x}px`);
+//       card.style.setProperty('--y', `${y}px`);
+//     });
+//   });
+// }
