@@ -21,22 +21,41 @@ h1 {
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  padding: 15px;
+  padding: 10px;
+  width: 180px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  perspective: 1000px; /* helps 3D tilt look smoother */
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  perspective: 1000px;
+  overflow: hidden;
 }
 
 .card img {
   width: 100%;
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.15s ease;
   transform-origin: center center;
   display: block;
+  will-change: transform;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    rgba(255, 255, 255, 0.4),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
 }
 
 .card h2 {
@@ -48,16 +67,6 @@ h1 {
   font-size: 14px;
 }
 
-.card.Fire:hover { box-shadow: 0 0 15px #ff6a00; }
-.card.Water:hover { box-shadow: 0 0 15px #0077ff; }
-.card.Grass:hover { box-shadow: 0 0 15px #2ba84a; }
-.card.Psychic:hover { box-shadow: 0 0 15px #7b3cff; }
-.card.Fighting:hover { box-shadow: 0 0 15px #92400e; }
-.card.Darkness:hover { box-shadow: 0 0 15px #000; }
-.card.Metal:hover { box-shadow: 0 0 15px #9ca3af; }
-.card.Dragon:hover { box-shadow: 0 0 15px #f57c00; }
-.card.Fairy:hover { box-shadow: 0 0 15px #ff66cc; }
-.card.Colorless:hover { box-shadow: 0 0 15px #d1d5db; }
 
 
 
