@@ -10,7 +10,7 @@ fetch('rsv10pt5.json')
         <h2>${card.name}</h2>
         <p><strong>${card.hp ? 'HP' : 'Supertype'}:</strong> ${card.hp || card.supertype}</p> 
         <p><strong>${card.types ? 'Type' : 'Subtype'}:</strong> ${card.types ? card.types.join(', ') : card.subtypes?.join(', ')}</p>
-        <p><strong>Rarity:</strong> ${card.rarity}</p>
+        <p><strong>Rarity:</strong> ${card.rarity}</p> 
       `;
       container.appendChild(div);
     });
