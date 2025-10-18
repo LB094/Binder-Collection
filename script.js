@@ -8,9 +8,9 @@ fetch('rsv10pt5.json')
       div.innerHTML = `
         <img src="${card.images?.small}" alt="${card.name}">
         <h2>${card.name}</h2>
-        <p><strong>HP:</strong> ${card.hp}</p>
-        <p><strong>Type:</strong> ${card.types?.join(', ')}</p>
-        <p><strong>Rarity:</strong> ${card.rarity || 'Unknown'}</p>
+        <p><strong>${card.hp ? 'HP' : 'Supertype'}:</strong> ${card.hp || card.supertype}</p> 
+        <p><strong>Type:</strong> ${card.types ? '' : 'Subtypes'}:</strong> ${card.types || card.subtype}</p>
+        <p><strong>Rarity:</strong> ${card.rarity}</p>
       `;
       container.appendChild(div);
     });
