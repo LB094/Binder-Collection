@@ -43,3 +43,74 @@ h1 {
   font-size: 14px;
 }
 
+/* --- Type-based card backgrounds --- */
+.card.Fire {
+  background: linear-gradient(135deg, #ff9a3c, #ff6a00);
+  color: white;
+}
+
+.card.Water {
+  background: linear-gradient(135deg, #3cbaff, #0077ff);
+  color: white;
+}
+
+.card.Grass {
+  background: linear-gradient(135deg, #4cd964, #2ba84a);
+  color: white;
+}
+
+.card.Lightning {
+  background: linear-gradient(135deg, #ffea00, #ffb300);
+  color: #222;
+}
+
+.card.Psychic {
+  background: linear-gradient(135deg, #b78cff, #7b3cff);
+  color: white;
+}
+
+.card.Fighting {
+  background: linear-gradient(135deg, #d97742, #92400e);
+  color: white;
+}
+
+.card.Darkness {
+  background: linear-gradient(135deg, #444, #000);
+  color: white;
+}
+
+.card.Metal {
+  background: linear-gradient(135deg, #9ca3af, #4b5563);
+  color: white;
+}
+
+.card.Dragon {
+  background: linear-gradient(135deg, #ffca28, #f57c00);
+  color: #222;
+}
+
+.card.Fairy {
+  background: linear-gradient(135deg, #ffb6e6, #ff66cc);
+  color: #222;
+}
+
+.card.Colorless {
+  background: linear-gradient(135deg, #f3f4f6, #d1d5db);
+  color: #222;
+}
+
+.card h2,
+.card p {
+  color: inherit;
+}
+
+.card.Fire:hover { box-shadow: 0 0 15px #ff6a00; }
+.card.Water:hover { box-shadow: 0 0 15px #0077ff; }
+.card.Grass:hover { box-shadow: 0 0 15px #2ba84a; }
+.card.Psychic:hover { box-shadow: 0 0 15px #7b3cff; }
+.card.Fighting:hover { box-shadow: 0 0 15px #92400e; }
+.card.Darkness:hover { box-shadow: 0 0 15px #000; }
+.card.Metal:hover { box-shadow: 0 0 15px #9ca3af; }
+.card.Dragon:hover { box-shadow: 0 0 15px #f57c00; }
+.card.Fairy:hover { box-shadow: 0 0 15px #ff66cc; }
+.card.Colorless:hover { box-shadow: 0 0 15px #d1d5db; }
