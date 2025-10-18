@@ -23,7 +23,7 @@ fetch('zsv10pt5.json')
 
 
 addCardHoverEffects();
-  })
+  
   .catch(error => console.error('Error loading cards:', error));
 
 
