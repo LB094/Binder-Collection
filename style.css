@@ -12,10 +12,9 @@ h1 {
 
 #card-container, #whiteflare-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /*1 fr is 1 fraction, however many cards are on the row it will distribute the space evenly*/
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 15px;
   margin-top: 20px;
-  max-width: 200px;
 }
 
 .card {
@@ -45,7 +44,8 @@ h1 {
 .card p {
   margin: 4px 0;
   font-size: 12px;
-} 
+}
+
 
 
 /*
