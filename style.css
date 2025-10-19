@@ -15,6 +15,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /*1 fr is 1 fraction, however many cards are on the row it will distribute the space evenly*/
   gap: 15px;
   margin-top: 20px;
+  max-width: 200px;
 }
 
 .card {
