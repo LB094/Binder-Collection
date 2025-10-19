@@ -12,7 +12,7 @@ h1 {
 
 #card-container, #whiteflare-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
   margin-top: 20px;
 }
@@ -45,6 +45,7 @@ h1 {
   margin: 4px 0;
   font-size: 12px;
 }
+
 
 
 
