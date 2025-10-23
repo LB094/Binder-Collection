@@ -17,7 +17,7 @@ h1 {
   color: #222;
 }
 
-#card-container, #whiteflare-container {
+#card-container, #whiteflare-container, #megaevo-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
