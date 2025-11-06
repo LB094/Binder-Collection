@@ -54,7 +54,7 @@ h1 {
 }
 
 
-.banner #hpCard #hpCard2 #hpCard3 {
+/* #banner #                       
   position: relative;
   display: flex;
   justify-content: center;
@@ -88,6 +88,49 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
+ #banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+    }
+
+    /* Shared styles for all three cards */
+    #banner img {
+      position: relative;
+      width: 180px;
+      height: 250px;
+      border-radius: 10px;
+      margin: 0 -45px;
+      transition: 0.5s;
+      box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transform-origin: bottom center;
+      background: linear-gradient(#fff2, transparent);
+    }
+
+    /* Initial rotation for each card */
+    #hpCard {
+      transform: rotate(-10deg);
+      z-index: 1;
+    }
+    #hpCard2 {
+      transform: rotate(0deg);
+      z-index: 2;
+    }
+    #hpCard3 {
+      transform: rotate(10deg);
+      z-index: 1;
+    }
+
+    /* Hover effect for all cards */
+    #banner img:hover {
+      transform: rotate(0deg) scale(1.1);
+      margin: 0 10px;
+      z-index: 3;
+    }
 
