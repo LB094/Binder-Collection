@@ -95,11 +95,12 @@ h1 {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 600px;
       overflow: hidden;
     }
  #hpBanner {
       position: absolute;
+      justify-content: center;
       top: 0;
       left: 0;
       width: 60%;
