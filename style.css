@@ -79,7 +79,6 @@ h1 {
 
 
 .banner .hpCard :before {
-  content:attr(data-text);
   position: absolute;
   bottom: 0;
   width: 100%;
