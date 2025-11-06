@@ -79,6 +79,7 @@ h1 {
 
 
 .banner .hpCard .hpCard2 .hpCard3 :before {
+  content:attr(alt);
   position: absolute;
   bottom: 0;
   width: 100%;
