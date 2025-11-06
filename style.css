@@ -54,7 +54,7 @@ h1 {
 }
 
 
-.banner .hpCard {
+.banner .hpCard .hpCard2 .hpCard3{
   position: relative;
   display: flex;
   justify-content: center;
@@ -71,14 +71,14 @@ h1 {
   transform: rotate(calc(var(--r) * 1deg));
 }
 
-.banner .hpCard :hover {
+.banner .hpCard .hpCard2 .hpCard3 :hover {
   transform: rotate(0deg);
   margin: 0 10px;
 
 }
 
 
-.banner .hpCard :before {
+.banner .hpCard .hpCard2 .hpCard3::before {
   position: absolute;
   bottom: 0;
   width: 100%;
