@@ -75,6 +75,7 @@ h1 {
     /* shared styles for all three cards */
     #hpCard, #hpCard2, #hpCard3 {
       position: relative;
+      justify-content: center;
       width: 180px;
       height: 250px;
       border-radius: 10px;
