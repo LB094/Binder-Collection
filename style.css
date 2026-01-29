@@ -54,42 +54,6 @@ h1 {
 }
 
 
-/* #banner #                       
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 180px;
-  height: 200px;
-  background: linear-gradient(#fff2, transparent);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
-  transition: 0.5s;
-  border-radius: 10px;
-  margin: 0 -45px;
-  backdrop-filter: blur(10px);
-  transform: rotate(calc(var(--r) * 1deg));
-}
-
-.banner #hpCard #hpCard2 #hpCard3:hover {
-  box-shadow: 0 35px 35px rgba(0, 0, 0, 0.35);
-  transform: rotate(0deg);
-  margin: 0 10px;
-
-}
-
-
-.banner #hpCard #hpCard2 #hpCard3::before {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.05);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
  #banner {
   position: relative;
       display: flex;
@@ -114,7 +78,7 @@ h1 {
       width: 180px;
       height: 250px;
       border-radius: 10px;
-      margin: 0 -45px;
+      margin: 0 -85px;
       transition: 0.5s;
       box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
       backdrop-filter: blur(10px);
