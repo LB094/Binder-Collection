@@ -103,12 +103,12 @@ h1 {
       justify-content: center;
       top: 0;
       left: 0;
-      width: 90%;
+      width: 100%;
       height: 80%;
       object-fit: cover;
       z-index: 0; /* behind everything */
     }
-    /* Shared styles for all three cards */
+    /* shared styles for all three cards */
     #hpCard, #hpCard2, #hpCard3 {
       position: relative;
       width: 180px;
