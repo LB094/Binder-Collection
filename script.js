@@ -6,7 +6,7 @@ fetch('zsv10pt5.json')
       const div = document.createElement('div');
       div.classList.add('card');
       if (card.types && card.types.length > 0) {
-  div.classList.add(card.types[0]); // e.g. 'Fire', 'Water'
+  div.classList.add(card.types[0]);
 }
       //Does the text for the code   Line 12 and 13 if it doesn't have a HP/Type THEN display supertype/subtype
       div.innerHTML = `
