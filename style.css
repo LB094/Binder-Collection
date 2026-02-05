@@ -56,12 +56,12 @@ h1 {
 
  #banner {
   position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 600px;
-      overflow: hidden;
-      user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  overflow: hidden;
+  user-select: none;
     }
  #hpBanner {
       position: absolute;
