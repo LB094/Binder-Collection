@@ -63,16 +63,17 @@ h1 {
   overflow: hidden;
   user-select: none;
     }
- #hpBanner {
-      position: absolute;
-      justify-content: center;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 80%;
-      object-fit: cover;
-      z-index: 0; /* behind everything */
-    }
+#hpBanner {
+  position: absolute;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: 0; /*behind everything*/
+}
+
+
     /* shared styles for all three cards */
     #hpCard, #hpCard2, #hpCard3 {
       position: relative;
