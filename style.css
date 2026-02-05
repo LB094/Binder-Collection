@@ -59,7 +59,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 400px;
   overflow: hidden;
   user-select: none;
 }
