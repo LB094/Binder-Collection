@@ -74,41 +74,41 @@ h1 {
 }
 
 
-    /* shared styles for all three cards */
-    #hpCard, #hpCard2, #hpCard3 {
-      position: relative;
-      justify-content: center;
-      width: 180px;
-      height: 250px;
-      border-radius: 10px;
-      margin: 0 -45px;
-      transition: 0.5s;
-      box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transform-origin: bottom center;
-      background: linear-gradient(#fff2, transparent);
-    }
+/* shared styles for all three cards */
+#hpCard, #hpCard2, #hpCard3 {
+  position: relative;
+  justify-content: center;
+  width: 180px;
+  height: 250px;
+  border-radius: 10px;
+  margin: 0 -45px;
+  transition: 0.5s;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform-origin: bottom center;
+  background: linear-gradient(#fff2, transparent);
+}
 
-    /* Initial rotation for each card */
-    #hpCard {
-      transform: rotate(-10deg);
-      z-index: 1;
-    }
-    #hpCard2 {
-      transform: rotate(0deg);
-      z-index: 2;
-    }
-    #hpCard3 {
-      transform: rotate(10deg);
-      z-index: 1;
-    }
+/* Initial rotation for each card */
+#hpCard {
+  transform: rotate(-10deg);
+  z-index: 1;
+}
+#hpCard2 {
+  transform: rotate(0deg);
+  z-index: 2;
+}
+#hpCard3 {
+  transform: rotate(10deg);
+  z-index: 1;
+}
 
-    /* Hover effect for all cards */
-    #hpCard:hover, #hpCard2:hover, #hpCard3:hover {
-      box-shadow: 0 35  px 35px rgba(0, 0, 0, 0.35);
-      transform: rotate(0deg) scale(1.1);
-      margin: 0 10px;
-      z-index: 3;
-    }
+/* Hover effect for all cards */
+#hpCard:hover, #hpCard2:hover, #hpCard3:hover {
+  box-shadow: 0 35  px 35px rgba(0, 0, 0, 0.35);
+  transform: rotate(0deg) scale(1.1);
+  margin: 0 10px;
+  z-index: 3;
+}
 
