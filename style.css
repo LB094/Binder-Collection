@@ -61,6 +61,7 @@ h1 {
       align-items: center;
       height: 600px;
       overflow: hidden;
+      user-select: none;
     }
  #hpBanner {
       position: absolute;
