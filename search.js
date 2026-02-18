@@ -4,45 +4,56 @@ const form = document.getElementById("searchForm");
 
 let allCards = [];
 
+// Load all cards once and store them
 async function loadCards() {
-  const responses = await Promise.all([
-    fetch("zsv10pt5.json"),
-    fetch("rsv10pt5.json"),
-    fetch("me1.json"),
-  ]);
+  try {
+    const responses = await Promise.all([
+      fetch("zsv10pt5.json"),
+      fetch("rsv10pt5.json"),
+      fetch("me1.json"),
+    ]);
 
-  const dataArrays = await Promise.all(
-    responses.map(res => res.json())
-  );
+    const dataArrays = await Promise.all(
+      responses.map(res => res.json())
+    );
 
-  allCards = dataArrays.flatMap(file => file.data);
+    // Assuming each JSON file has a 'data' array of cards
+    allCards = dataArrays.flatMap(file => file.data);
 
-  // DO NOT call displayCards here
+    console.log("Cards loaded:", allCards.length);
+
+  } catch (error) {
+    console.error("Error loading cards:", error);
+  }
 }
 
+// Call loadCards immediately when script runs
 loadCards();
 
-
-// Only runs when search button is pressed
-form.addEventListener("submit", function (e) {
+// Handle form submit (search)
+form.addEventListener("submit", async function (e) {
   e.preventDefault();
 
-  const value = searchInput.value.toLowerCase();
+  // If cards not loaded yet, wait for them
+  if (allCards.length === 0) {
+    await loadCards();
+  }
 
-  // If search is empty, show nothing
+  const value = searchInput.value.toLowerCase().trim();
+
   if (value === "") {
     container.innerHTML = "";
     return;
   }
 
   const filtered = allCards.filter(card =>
-    card.name.toLowerCase().includes(value)
+    card.name?.toLowerCase().includes(value)
   );
 
   displayCards(filtered);
 });
 
-
+// Render cards to the page
 function displayCards(cards) {
   container.innerHTML = "";
 
@@ -56,12 +67,12 @@ function displayCards(cards) {
     cardDiv.classList.add("card");
 
     cardDiv.innerHTML = `
-        <img src="${card.images?.small}" alt="${card.name}">
-        <h2>${card.name}</h2>
-        <p><strong>${card.hp ? 'HP' : 'Type'}:</strong> ${card.hp || card.supertype}</p> 
-        <p><strong>${card.types ? 'Type' : 'Subtype'}:</strong> ${card.types ? card.types.join(', ') : card.subtypes?.join(', ')}</p>
-        <p><strong>Rarity:</strong> ${card.rarity}</p> 
-      `;
+      <img src="${card.images?.small || ''}" alt="${card.name || 'Card image'}" />
+      <h2>${card.name || 'Unknown Name'}</h2>
+      <p><strong>${card.hp ? 'HP' : 'Type'}:</strong> ${card.hp || card.supertype || 'N/A'}</p>
+      <p><strong>${card.types ? 'Type' : 'Subtype'}:</strong> ${card.types ? card.types.join(', ') : (card.subtypes?.join(', ') || 'N/A')}</p>
+      <p><strong>Rarity:</strong> ${card.rarity || 'N/A'}</p>
+    `;
 
     container.appendChild(cardDiv);
   });
