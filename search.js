@@ -56,7 +56,7 @@ function displayCards(cards) {
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("card");
 
-    div.innerHTML = `
+    cardDiv.innerHTML = `
         <img src="${card.images?.small}" alt="${card.name}">
         <h2>${card.name}</h2>
         <p><strong>${card.hp ? 'HP' : 'Type'}:</strong> ${card.hp || card.supertype}</p> 
