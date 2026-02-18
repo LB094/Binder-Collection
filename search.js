@@ -6,17 +6,16 @@ let allCards = [];
 
 async function loadCards() {
   const responses = await Promise.all([
-    fetch("cards1.json"),
-    fetch("cards2.json"),
-    fetch("cards3.json"),
-    fetch("cards4.json")
+    fetch("zsv10pt5.json"),
+    fetch("rsv10pt5.json"),
+    fetch("me1.json"),
   ]);
 
   const dataArrays = await Promise.all(
     responses.map(res => res.json())
   );
 
-  allCards = dataArrays.flat();
+  allCards = dataArrays.flatMap(file => file.data);
 
   // DO NOT call displayCards here
 }
