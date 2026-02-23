@@ -18,7 +18,7 @@ async function loadCards() {
     );
 
     // Assuming each JSON file has a 'data' array of cards
-    allCards = dataArrays.flatMap(file => file.data);
+    allCards = dataArrays.flat();
 
     console.log("Cards loaded:", allCards.length);
 
