@@ -1,26 +1,26 @@
-const container = document.getElementById("cardContainer");
-const searchInput = document.getElementById("searchInput");
+const container = document.getElementById("cardContainer"); //search will appear
+const searchInput = document.getElementById("searchInput"); //
 const form = document.getElementById("searchForm");
 
-let allCards = [];
+let allCards = []; //array to store cards
 
-// Load all cards once and store them
+//get cards and store them
 async function loadCards() {
   try {
-    const responses = await Promise.all([
-      fetch("zsv10pt5.json"),
-      fetch("rsv10pt5.json"),
-      fetch("me1.json"),
+    const responses = await Promise.all([ //promise all will not proceed until all 3 files are fetched
+      fetch("zsv10pt5.json"), // get black bolt
+      fetch("rsv10pt5.json"), //get white flare
+      fetch("me1.json"), // get mega evo
     ]);
 
-    const dataArrays = await Promise.all(
-      responses.map(res => res.json())
+    const dataArrays = await Promise.all( 
+      responses.map(res => res.json()) //return json
     );
 
-    // Assuming each JSON file has a 'data' array of cards
-    allCards = dataArrays.flat();
+    
+    allCards = dataArrays.flat(); //merge array
 
-    console.log("Cards loaded:", allCards.length);
+    console.log("Cards loaded:", allCards.length); //
 
   } catch (error) {
     console.error("Error loading cards:", error);
