@@ -30,27 +30,15 @@ async function loadCards() {
 // Call loadCards immediately when script runs
 loadCards();
 
-// Handle form submit (search)
-form.addEventListener("submit", async function (e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // If cards not loaded yet, wait for them
-  if (allCards.length === 0) {
-    await loadCards();
-  }
+  const value = searchInput.value.trim();
 
-  const value = searchInput.value.toLowerCase().trim();
+  if (value === "") return;
 
-  if (value === "") {
-    container.innerHTML = "";
-    return;
-  }
-
-  const filtered = allCards.filter(card =>
-    card.name?.toLowerCase().includes(value)
-  );
-
-  displayCards(filtered);
+  // redirect to search page
+  window.location.href = `search.html?q=${encodeURIComponent(value)}`;
 });
 
 // Render cards to the page
