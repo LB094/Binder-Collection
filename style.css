@@ -151,31 +151,40 @@ h2 {
   padding: 10px;
 }
 
-/* Individual card style */
+/* Remove hover from the card box */
 .card {
-  background: white;
+  background: #f4f6f8; /* match your body background */
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: none; /* remove shadow */
   padding: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
 }
 
+/* Remove the card:hover rule entirely, or neutralise it */
 .card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 15px rgba(0,0,0,0.25);
+  transform: none;
+  box-shadow: none;
 }
 
+/* Put the hover effect on the image instead */
 .card img {
   width: 100%;
   max-height: 250px;
   object-fit: contain;
   border-radius: 10px;
   margin-bottom: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
 .card h2 {
