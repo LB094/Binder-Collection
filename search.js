@@ -121,11 +121,14 @@ function displayCards(cards) {
   });
 }
 
-// Run search if a ?q= param exists in the URL (i.e. on search.html)
+// test if it works 
 async function runSearch() {
   await loadCards();
   const query = getQuery();
-  if (!query) return;
+
+  // Pre-fill the input with the current query
+  const searchInput = document.getElementById("searchInput");
+  if (searchInput && query) searchInput.value = query;
 
   const filtered = allCards.filter(card =>
     card.name?.toLowerCase().includes(query)
@@ -133,6 +136,7 @@ async function runSearch() {
 
   displayCards(filtered);
 }
+
 
 // Handle form submit on any page
 if (form) {
@@ -145,3 +149,16 @@ if (form) {
 }
 
 runSearch();
+
+//   for the search page
+const form = document.getElementById("searchForm");
+const searchInput = document.getElementById("searchInput");
+
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const value = searchInput.value.trim();
+    if (value === "") return;
+    window.location.href = `search.html?q=${encodeURIComponent(value)}`;
+  });
+}
