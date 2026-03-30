@@ -59,3 +59,15 @@ async function runSearch() {
 }
 
 runSearch();
+//   for the search page
+const form = document.getElementById("searchForm");
+const searchInput = document.getElementById("searchInput");
+
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const value = searchInput.value.trim();
+    if (value === "") return;
+    window.location.href = `search.html?q=${encodeURIComponent(value)}`;
+  });
+}
