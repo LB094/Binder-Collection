@@ -28,7 +28,14 @@ body {
 }
 
 h1 {
-  color: #222;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1a1a1a, #444);
+  color: #fff;
+  padding: 12px 24px;
+  display: inline-block;
+  border-left: 6px solid #ffcc00;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
