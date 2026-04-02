@@ -32,8 +32,8 @@ h1 {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: left;
-  font-size: 80%;
+  text-align: center;
+  font-size: 150%;
 }
 
 h2 {
@@ -47,7 +47,7 @@ h2 {
   color: #222;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 300;
-  font-size: 50%;
+  font-size: 80%;
 }
 
 .hph1 {
@@ -61,7 +61,6 @@ h2 {
   gap: 15px;
   margin-top: 20px;
 }
-
 
 
 .card img {
@@ -91,7 +90,6 @@ h2 {
   overflow: hidden;
   user-select: none;
 }
-
 
 /* shared styles for all three cards */
 #hpCard, #hpCard2, #hpCard3 {
@@ -130,9 +128,6 @@ h2 {
   margin: 0 10px;
   z-index: 3;
 }
-
-
-
 
 
 /* Container holding the search result cards */
