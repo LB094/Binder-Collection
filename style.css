@@ -28,6 +28,7 @@ body {
 }
 
 h1 {
+  font-family: "Space Grotesk";
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -38,8 +39,10 @@ h1 {
   background: linear-gradient(90deg, #ff4d4d, #6a5cff, #00d4ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-clip: text;
 }
-}
+
 
 h2 {
   color: #222;
@@ -83,7 +86,6 @@ h2 {
   margin: 4px 0;
   font-size: 12px;
 }
-
 
  #banner {
   position: relative;
@@ -192,7 +194,6 @@ h2 {
   font-size: 14px;
   color: #555;
 }
-
 
 @keyframes fadeIn {
   to {
