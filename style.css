@@ -43,11 +43,20 @@ h1 {
   background-clip: text;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows stacking on small screens */
+  background-color: #f2f0ba;
+  padding: 10px;
+  font-family: "Sora";
+}
+
 .navbar {
   float: left;
-  padding: 10%;
+  padding: 1%;
   background-color: #f2f0ba;
-  text-align: center;
   display: block;
 }
 
