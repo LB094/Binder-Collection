@@ -43,6 +43,13 @@ h1 {
   background-clip: text;
 }
 
+.navbar {
+  float: left;
+  padding: 10%;
+  background-color: #f2f0ba;
+  text-align: center;
+  display: block;
+}
 
 h2 {
   color: #222;
