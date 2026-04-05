@@ -7,20 +7,44 @@
 </head>
 
 <body>
-<nav>
-        <a href = "index.html"> HOME</a>
-        <a href="blackbolt.html">BLACK BOLT</a>
-        <a href="whiteflare.html">WHITE FLARE</a>
-        <a href="megaevo.html">MEGA EVOLUTION</a>
-        <a href="index.html">ABOUT</a>
-        <form id="searchForm">
-            <input type="text" id="searchInput" placeholder="Search cards...">
-            <button type="submit">Search</button>
-         </form>
-          
-          
-
-    </nav>
+  <nav>
+  <!-- Desktop layout -->
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Binder Collection</a>
+ 
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="blackbolt.html">Black Bolt</a>
+      <a href="whiteflare.html">White Flare</a>
+      <a href="megaevo.html">Mega Evo</a>
+      <a href="about.html">About</a>
+    </div>
+ 
+    <form id="searchForm" class="nav-search">
+      <input type="text" id="searchInput" placeholder="Search cards…">
+      <button type="submit">Search</button>
+    </form>
+ 
+    <!-- Mobile -->
+    <button class="nav-hamburger" id="navBurger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+ 
+  <div class="nav-mobile" id="navMobileMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="blackbolt.html">Black Bolt</a>
+    <a href="whiteflare.html">White Flare</a>
+    <a href="megaevo.html">Mega Evo</a>
+    <a href="about.html">About</a>
+    <form class="nav-mobile-search">
+      <input type="text" placeholder="Search cards…">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 <h1>Search Results</h1>
 
 <div id="cardContainer"></div>
