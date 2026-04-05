@@ -43,6 +43,175 @@ h1 {
   background-clip: text;
 }
 
+nav {
+  background: #1c1f2e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+ 
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  height: 54px;
+  gap: 16px;
+}
+ 
+.nav-logo {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+ 
+/* ── Desktop links ── */
+.nav-links {
+  display: flex;
+  gap: 2px;
+}
+ 
+.nav-links a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  transition: color 0.15s, background 0.15s;
+}
+ 
+.nav-links a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.07);
+}
+ 
+.nav-links a.active {
+  color: #fff;
+}
+ 
+/* Desktop search */
+.nav-search {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+ 
+.nav-search:focus-within {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+ 
+.nav-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78em;
+  padding: 6px 11px;
+  width: 150px;
+}
+ 
+.nav-search input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+ 
+.nav-search button {
+  background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78em;
+  font-weight: 500;
+  padding: 6px 13px;
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+}
+ 
+.nav-search button:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+ 
+/* Hamburger button (hidden on desktop) */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+ 
+.nav-hamburger:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+ 
+.nav-hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+ 
+.nav-hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+ 
+/* Mobile dropdown (hidden by default) */
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 10px 20px 16px;
+}
+ 
+.nav-mobile.open {
+  display: flex;
+}
+ 
+.nav-mobile a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+ 
+.nav-mobile a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+
 .nav-mobile a.active {  /* a.active like a:hover but more mobile friendly*/
   color: #fff;
 }
@@ -98,7 +267,7 @@ h1 {
   }
 }
 
-#searchForm{
+/* #searchForm{
   align-items: center;
   display: flex;
   border: 1px solid #ccc;
@@ -138,7 +307,7 @@ h1 {
   #searchForm {
     margin-top: 10px;
   }
-}
+} */
 
 h2 {
   color: #222;
