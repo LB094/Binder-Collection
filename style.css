@@ -36,11 +36,21 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   border-bottom: 3px solid rgba(255, 255, 255, 0.15);
-  padding-bottom: 16px;
+  padding-bottom: 6px;
   margin-bottom: 0;
   color: #1c1f2e;
   text-decoration: underline #ffffcb;
+  text-underline-offset: 3px;
   font-size: clamp(24px, 5vw, 48px);   /*# minimum size is 24px, optimial is 5vw (screen scaling), 48px MAX*/
+}
+
+h2 {
+  color: #222;
+  font-family: "Sora", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(12px, 2.5vw, 24px);   /*# minimum size is 12px, optimial is 2.5vw (screen scaling), 24px MAX*/
+  margin-top: 3px;
 }
 
 nav {
@@ -267,14 +277,6 @@ nav {
   }
 }
 
-
-h2 {
-  color: #222;
-  font-family: "Sora", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 40%;
-}
 
 #card-container, #whiteflare-container, #megaevo-container {
   display: grid;
