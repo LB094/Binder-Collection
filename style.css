@@ -350,6 +350,22 @@ nav {
   z-index: 3;
 }
 
+@media (max-width: 600px) { /*for phones*/
+  #hpCard {
+    transform: rotate(-6deg);
+  }
+
+  #hpCard3 {
+    transform: rotate(6deg);
+  }
+
+  #hpCard:hover,
+  #hpCard2:hover,
+  #hpCard3:hover {
+    transform: scale(1.05);
+    margin: 0 5px;
+  }
+}
 
 /* Container holding the search result cards */
 #cardContainer {
@@ -363,11 +379,9 @@ nav {
   padding: 10px;
 }
 
-/* Remove hover from the card box */
 .card {
   background: transparent; /* match body background */
   border-radius: 12px;
-  box-shadow: none; /* remove shadow */
   padding: 10px;
   cursor: pointer;
   display: flex;
@@ -378,11 +392,6 @@ nav {
   animation: fadeIn 0.3s forwards;
 }
 
-/* Remove the card:hover rule entirely, or neutralise it */
-.card:hover {
-  transform: none;
-  box-shadow: none;
-}
 
 /* Put the hover effect on the image instead */
 .card img {
