@@ -365,7 +365,7 @@ nav {
 
 /* Remove hover from the card box */
 .card {
-  background: #f4f6f8; /* match body background */
+  background: transparent; /* match body background */
   border-radius: 12px;
   box-shadow: none; /* remove shadow */
   padding: 10px;
