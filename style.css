@@ -31,17 +31,16 @@ body {
 h1 {
   font-family: "Sora", sans-serif;
   font-weight: 700;
-  font-size: 48px;
   letter-spacing: 0.08em;
   line-height: 1;
   text-transform: uppercase;
-  color: #fff;
   text-align: center;
   border-bottom: 3px solid rgba(255, 255, 255, 0.15);
   padding-bottom: 16px;
   margin-bottom: 0;
   color: #1c1f2e;
   text-decoration: underline #ffffcb;
+  font-size: clamp(24px, 5vw, 48px);   /*# minimum size is 24px, optimial is 5vw (screen scaling), 48px MAX*/
 }
 
 nav {
@@ -271,21 +270,10 @@ nav {
 
 h2 {
   color: #222;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 300;
-  font-size: 40%;
-}
-
-#bbh2 {
-  color: #222;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 300;
-  font-size: 80%;
-}
-
-.hph1 {
-  color: #222;
   font-family: "Sora", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 40%;
 }
 
 #card-container, #whiteflare-container, #megaevo-container {
