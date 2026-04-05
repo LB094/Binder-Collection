@@ -43,23 +43,59 @@ h1 {
   background-clip: text;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* allows stacking on small screens */
-  background-color: #f2f0ba;
-  padding: 10px;
-  font-family: "Sora";
-  text-decoration: none;
-  font-weight: 500;
+.nav-mobile a.active {  /* a.active like a:hover but more mobile friendly*/
+  color: #fff;
 }
-
-.navbar {
-  float: left;
-  padding: 1%;
-  background-color: #f2f0ba;
-  display: block;
+ 
+.nav-mobile-search {
+  display: flex;
+  margin-top: 0.5rem;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+}
+ 
+.nav-mobile-search input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.85rem;
+  padding: 8px 12px;
+}
+ 
+.nav-mobile-search input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+ 
+.nav-mobile-search button {
+  background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem; /* scales with font size*/
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+ 
+.nav-mobile-search button:hover {
+  color: #fff;
+}
+ 
+/* 手机 */
+@media (max-width: 680px) {
+  .nav-links,
+  .nav-search {
+    display: none;
+  }
+ 
+  .nav-hamburger {
+    display: flex;
+  }
 }
 
 #searchForm{
@@ -210,7 +246,7 @@ h2 {
 
 /* Remove hover from the card box */
 .card {
-  background: #f4f6f8; /* match your body background */
+  background: #f4f6f8; /* match body background */
   border-radius: 12px;
   box-shadow: none; /* remove shadow */
   padding: 10px;
