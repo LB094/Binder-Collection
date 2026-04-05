@@ -9,12 +9,48 @@
 </head>
 <body>
   <marquee>This website is an independent, fan-created resource and is not affiliated with, endorsed, sponsored, or approved by The Pokémon Company International, Nintendo, Game Freak, or Creatures Inc.</marquee>
+  <nav>
+  <!-- Desktop layout -->
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Binder Collection</a>
+ 
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="blackbolt.html">Black Bolt</a>
+      <a href="whiteflare.html">White Flare</a>
+      <a href="megaevo.html">Mega Evo</a>
+      <a href="about.html">About</a>
+    </div>
+ 
+    <form id="searchForm" class="nav-search">
+      <input type="text" id="searchInput" placeholder="Search cards…">
+      <button type="submit">Search</button>
+    </form>
+ 
+    <!-- Mobile -->
+    <button class="nav-hamburger" id="navBurger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+ 
+  <div class="nav-mobile" id="navMobileMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="blackbolt.html">Black Bolt</a>
+    <a href="whiteflare.html">White Flare</a>
+    <a href="megaevo.html">Mega Evo</a>
+    <a href="about.html">About</a>
+    <form class="nav-mobile-search">
+      <input type="text" placeholder="Search cards…">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</nav>
   <h1>White Flare</h1>
   <h2>Scarlett & Violet</h2>
-  <a href="index.html">Home</a>
-<a href="blackbolt.html">Black Bolt</a>
-<a href="megaevo.html">Mega Evolution</a>
 <div id="whiteflare-container"></div>
  <script src="whiteflare.js"></script>
+ <script src="nav.js"></script>
 </body>
 </html>
