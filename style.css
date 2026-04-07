@@ -81,7 +81,7 @@ nav {
   flex-shrink: 0;
 }
  
-/* ── Desktop links ── */
+/* links */
 .nav-links {
   display: flex;
   gap: 2px;
