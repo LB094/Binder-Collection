@@ -58,6 +58,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  user-select: none;
 }
  
 .nav-inner {
@@ -95,6 +96,7 @@ nav {
   padding: 5px 12px;
   border-radius: 5px;
   transition: color 0.15s, background 0.15s;
+  user-select: none;
 }
  
 .nav-links a:hover {
