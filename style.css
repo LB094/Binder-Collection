@@ -439,7 +439,7 @@ nav {
   padding: 0 32px;
 }
  
-.set-card {
+/* .set-card {
   background: #fff;
   border: 1px solid #e8e8e8;
   border-radius: 14px;
@@ -457,7 +457,7 @@ nav {
 }
  
 /* Top bit */
-.set-card .set-tag,
+/* .set-card .set-tag,
 .set-card h2,
 .set-card .set-date {
   background: #1c1f2e;
@@ -494,17 +494,17 @@ nav {
 }
  
 /* line*/
-.set-card::after {
+/* .set-card::after {
   content: '';
   display: block;
   height: 3px;
   background: #ffffcb;
   flex-shrink: 0;
   order: 10;
-}
+} */
  
 /* Bottom */
-.set-card .set-desc {
+/* .set-card .set-desc {
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   line-height: 1.75;
@@ -516,7 +516,7 @@ nav {
 }
  
 /* CTA button */
-.set-card a {
+/* .set-card a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -556,11 +556,135 @@ nav {
   transform: translateX(3px);
 }
  
-/* s手机 */
+
 @media (max-width: 700px) {
   .sets-section {
     grid-template-columns: 1fr;
     padding: 0 16px;
     margin: 32px auto;
   }
+} */
+
+Looking at your design, the boxes feel a bit heavy — the all-dark `#1c1f2e` header filling the whole top half makes them feel oppressive. Here are some tasteful improvements that keep your existing colour palette and feel light/clean:
+
+**What I'd change:**
+- Make the card background fully white with just a subtle border (no dark fill dominating)
+- Move the set name/tag to a slim coloured accent line at the top instead of a dark block
+- Keep your `#1c1f2e` and `#ffffcb` colours but use them sparingly — for the tag text and accent line
+- Soften the button to matchHere's the updated CSS for your `.set-card` — just replace your existing block:
+
+```css
+.set-card {
+  background: #fff;
+  border: 0.5px solid #d8d8d8;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
 }
+
+.set-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(28, 31, 46, 0.09);
+}
+
+.set-card .set-tag,
+.set-card h2,
+.set-card .set-date {
+  background: none;
+  padding: 0;
+}
+
+.set-card .set-tag {
+  font-family: "Sora", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #1c1f2e;
+  opacity: 0.45;
+  margin: 0 0 5px;
+  padding-top: 20px;
+}
+
+.set-card h2 {
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c1f2e;
+  line-height: 1.1;
+  padding-bottom: 4px;
+}
+
+.set-card .set-date {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  color: #888;
+  padding-bottom: 16px;
+}
+
+/* Replace the ::after yellow line with a top border accent */
+.set-card::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: #1c1f2e;
+  order: -1;
+}
+
+.set-card::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #e8e8e8;
+  margin: 0 20px;
+}
+
+.set-card .set-desc {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #555;
+  margin: 0;
+  padding: 16px 20px 0;
+  flex: 1;
+}
+
+.set-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: #1c1f2e;
+  border: 1px solid #1c1f2e;
+  font-family: "Sora", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 9px 16px;
+  border-radius: 7px;
+  margin: 16px auto 20px;
+  transition: background 0.15s, color 0.15s, letter-spacing 0.15s;
+}
+
+.set-card a::after {
+  content: '→';
+  font-size: 13px;
+  transition: transform 0.15s;
+}
+
+.set-card a:hover {
+  background: #1c1f2e;
+  color: #ffffcb;
+  letter-spacing: 0.13em;
+}
+
+.set-card a:hover::after {
+  transform: translateX(3px);
+}
+
+
