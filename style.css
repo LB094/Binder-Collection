@@ -437,12 +437,15 @@ nav {
   max-width: 1600px;
   margin: 48px auto;
   padding: 0 32px;
+  background-color: #ffffcb;
+  background-image: radial-gradient(circle, #1c1f2e 2px, transparent 1px);
+  background-size: 22px 22px;
 }
  
 /* .set-card {
   background: #fff;
   border: 1px solid #e8e8e8;
-  border-radius: 14px;
+  border-radius: 14px;t
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -566,7 +569,7 @@ nav {
 } */
 
 .set-card {
-  background: #fff;
+  background: transparent ;
   border: 0.5px solid #d8d8d8;
   border-radius: 14px;
   overflow: hidden;
