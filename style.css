@@ -565,15 +565,6 @@ nav {
   }
 } */
 
-Looking at your design, the boxes feel a bit heavy — the all-dark `#1c1f2e` header filling the whole top half makes them feel oppressive. Here are some tasteful improvements that keep your existing colour palette and feel light/clean:
-
-**What I'd change:**
-- Make the card background fully white with just a subtle border (no dark fill dominating)
-- Move the set name/tag to a slim coloured accent line at the top instead of a dark block
-- Keep your `#1c1f2e` and `#ffffcb` colours but use them sparingly — for the tag text and accent line
-- Soften the button to matchHere's the updated CSS for your `.set-card` — just replace your existing block:
-
-```css
 .set-card {
   background: #fff;
   border: 0.5px solid #d8d8d8;
