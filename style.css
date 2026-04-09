@@ -559,7 +559,7 @@ nav {
 
 .sets-section {
   background-color: #fdf3d0;
-  background-image: radial-gradient(circle, #c9a82a 1px, transparent 1px);
+  background-image: radial-gradient(circle, #1c1f2e 1px, transparent 1px);
   background-size: 22px 22px;
   padding: 60px 48px;
   margin: 0;
@@ -723,7 +723,7 @@ body {
 
 .about-icon {
   background: #111827;
-  color: white;
+  color: #ffffcb;
   font-size: 18px;
   width: 40px;
   height: 40px;
