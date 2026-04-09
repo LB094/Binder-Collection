@@ -6,7 +6,7 @@
 #hpBanner {
   width: 100%;
   max-width: 2500px;
-  margin: 0 auto;
+  margin: 0 20px auto;
   display: block;
   position: absolute;
   justify-content: center;
@@ -312,6 +312,7 @@ nav {
   height: 400px;
   overflow: hidden;
   user-select: none;
+  margin: 0 -20px;
 }
 
 /* shared styles for all three cards */
