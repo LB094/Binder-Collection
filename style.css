@@ -561,8 +561,12 @@ nav {
   background-image: radial-gradient(circle, #c9a82a 1px, transparent 1px);
   background-size: 22px 22px;
   padding: 60px 48px;
-  max-width: 100%;
   margin: 0;
+}
+
+.sets-inner {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .set-row {
