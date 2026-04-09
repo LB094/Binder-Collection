@@ -332,6 +332,8 @@ nav {
   gap: 8px;
   text-align: center;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .footer-links ul li a {
