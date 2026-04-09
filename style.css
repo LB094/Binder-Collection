@@ -429,18 +429,6 @@ nav {
 
 
 
-
-.sets-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1600px;
-  margin: 48px auto;
-  padding: 0 32px;
-  background-color: #ffffcb;
-  background-image: radial-gradient(circle, #1c1f2e 1px, transparent 1px);
-  background-size: 22px 22px;
-}
  
 /* .set-card {
   background: #fff;
