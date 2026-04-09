@@ -446,6 +446,15 @@ nav {
   pointer-events: none;
 }
 
+.sets-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 60px;
+  background: linear-gradient(to top, #1c1f2e 0%, transparent 100%);
+  pointer-events: none;
+}
+
 .sets-inner {
   max-width: 780px;
   margin: 0 auto;
