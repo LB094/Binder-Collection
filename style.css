@@ -330,6 +330,7 @@ nav {
   flex-direction: column;
   gap: 8px;
   text-align: center;
+  justify-content: center;
 }
 
 .footer-links ul li a {
@@ -733,7 +734,9 @@ body {
   flex-shrink: 0;
 }
 
-.about-text {}
+/* .about-text {
+
+} */
 
 .about-heading {
   font-size: 18px;
