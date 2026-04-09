@@ -594,17 +594,18 @@ nav {
   flex-shrink: 0;
   width: 180px;
   height: 180px;
-  background: #fff;
-  border-radius: 50%;
-  border: 2px solid rgba(28,31,46,0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
-.set-logo img { width: 130px; height: 130px; object-fit: contain; }
+.set-logo img {
+   width: 130px; height: 130px; object-fit: contain; 
+}
 
-.set-text { flex: 1; }
+.set-text {
+   flex: 1; 
+}
 
 .set-tag {
   font-family: "Sora", sans-serif;
