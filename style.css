@@ -325,15 +325,16 @@ nav {
   text-align: center;
 }
 
-.footer-links ul {
-  list-style: none;
+.footer-links {
   display: flex;
   flex-direction: column;
-  /* gap: 8px; */
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  align-items: center; /* centers BOTH h4 + ul together */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links ul li a {
