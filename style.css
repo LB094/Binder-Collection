@@ -329,7 +329,7 @@ nav {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  /* gap: 8px; */
   text-align: center;
   justify-content: center;
   align-items: center;
