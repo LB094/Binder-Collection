@@ -673,3 +673,81 @@ nav {
 }
 
 
+body {
+  background: #f4f4f5;
+  color: #111827;
+}
+
+/* HERO */
+.about-hero {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about-tag {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  color: #cbd5f5;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+/* CONTENT */
+.about-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* CARD */
+.about-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  align-items: flex-start;
+}
+
+.about-icon {
+  background: #111827;
+  color: white;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.about-text {}
+
+.about-heading {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.about-paragraph {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* DIVIDER */
+.about-divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
