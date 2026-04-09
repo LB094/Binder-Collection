@@ -562,17 +562,27 @@ nav {
   background-size: 22px 22px;
   padding: 60px 48px;
   margin: 0;
+  position: relative;
+}
+
+.sets-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, #1c1f2e 0%, transparent 100%);
+  pointer-events: none;
 }
 
 .sets-inner {
-  max-width: 900px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
 .set-row {
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: 36px;
   padding: 56px 0;
   border-bottom: 1px solid rgba(28,31,46,0.12);
 }
