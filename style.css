@@ -623,7 +623,7 @@ nav {
 
 .set-card-img:hover {
   transform: rotate(0deg) scale(1.08) translateY(-6px);
-  filter: drop-shadow(0 32px 48px rgba(0,0,0,0.35));
+  filter: drop-shadow(0 10px 15px #00000009);
 }
 
 .set-row.flip .set-card-img:hover {
