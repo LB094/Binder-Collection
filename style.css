@@ -647,8 +647,8 @@ nav {
   margin-bottom: 10px;
 }
 
-.set-row:not(.dark) .set-era { color: #ffffcb; }
-.set-row.dark .set-era { color: #1c1f2e; }
+.set-row:not(.dark) .set-era { color: #1c1f2e; }
+.set-row.dark .set-era { color: #ffffcb; }
 
 .set-set {
   font-family: "Sora", sans-serif;
@@ -710,7 +710,7 @@ nav {
 }
 
 .set-row.dark .set-btn:hover {
-  background: #fff5a0;
+  background: #ffffcb;
   letter-spacing: 0.2em;
   padding: 10px 24px;
 }
