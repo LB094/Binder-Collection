@@ -681,83 +681,103 @@ nav {
 }
 
 
-body {
-  background: #f4f4f5;
-  color: #111827;
-}
-
-/* HERO */
 .about-hero {
-  background: #0f172a;
-  color: white;
+  background: #1c1f2e;
+  padding: 64px 48px 56px;
   text-align: center;
-  padding: 80px 20px;
 }
 
-.about-tag {
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #94a3b8;
-  margin-bottom: 10px;
+.about-eyebrow {
+  font-family: "Sora", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #ffffcb;
+  margin-bottom: 14px;
 }
 
 .about-title {
+  font-family: "Sora", sans-serif;
   font-size: 48px;
-  margin-bottom: 10px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 16px;
+  text-decoration: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .about-subtitle {
-  color: #cbd5f5;
-  max-width: 600px;
+  font-size: 15px;
+  color: rgba(255,255,255,0.45);
+  max-width: 500px;
   margin: 0 auto;
-  font-size: 16px;
+  line-height: 1.7;
 }
 
-/* CONTENT */
-.about-content {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-/* CARD */
-.about-card {
+.about-body {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 64px 24px;
   display: flex;
-  gap: 20px;
-  padding: 20px 0;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.about-block {
+  display: flex;
+  gap: 28px;
   align-items: flex-start;
 }
 
 .about-icon {
-  background: #111827;
-  color: #ffffcb;
-  font-size: 18px;
-  width: 40px;
-  height: 40px;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: #1c1f2e;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  flex-shrink: 0;
-}
-
-/* .about-text {
-
-} */
-
-.about-heading {
+  color: #ffffcb;
   font-size: 18px;
-  margin-bottom: 8px;
+  margin-top: 2px;
 }
 
-.about-paragraph {
+.about-block h2 {
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c1f2e;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-decoration-color: #ffffcb;
+  text-underline-offset: 3px;
+}
+
+.about-block p {
   font-size: 14px;
-  color: #6b7280;
-  line-height: 1.6;
+  color: #555;
+  line-height: 1.8;
 }
 
-/* DIVIDER */
 .about-divider {
-  border: none;
-  border-top: 1px solid #e5e7eb;
+  height: 1px;
+  background: rgba(28,31,46,0.1);
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding: 48px 24px 40px;
+  }
+  .about-title {
+    font-size: 36px;
+  }
+  .about-block {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
