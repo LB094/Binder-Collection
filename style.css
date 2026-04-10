@@ -841,4 +841,5 @@ nav {
   text-transform: uppercase;
   font-size: clamp(12px, 2.5vw, 24px);   /*# minimum size is 12px, optimial is 2.5vw (screen scaling), 24px MAX*/
   margin-top: 3px;
+  font-style: normal;
 }
