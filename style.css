@@ -835,12 +835,10 @@ nav {
 }
 
 .card-name {
-  h2 {
   color: #222;
   font-family: "Sora", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: clamp(12px, 2.5vw, 24px);   /*# minimum size is 12px, optimial is 2.5vw (screen scaling), 24px MAX*/
   margin-top: 3px;
-}
 }
