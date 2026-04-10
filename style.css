@@ -671,10 +671,13 @@ nav {
 .set-date {
   font-size: 12px;
   margin-bottom: 14px;
+  color: #c0c0c0;
 }
 
 /* .set-row:not(.dark) .set-date { color: rgba(28,31,46,0.38); }
 .set-row.dark .set-date { color: rgba(255,255,255,0.3); } */
+
+
 
 .set-desc {
   font-size: 14px;
@@ -682,8 +685,12 @@ nav {
   margin-bottom: 24px;
 }
 
-.set-row:not(.dark) .set-desc { color: #555; }
-.set-row.dark .set-desc { color: rgba(255,255,255,0.55); }
+/* .set-row:not(.dark) .set-desc { color: #555; }
+.set-row.dark .set-desc { color: rgba(255,255,255,0.55); } */
+
+.set-desc {
+  color: #555;
+}
 
 .set-btn {
   display: inline-flex;
