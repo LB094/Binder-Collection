@@ -846,6 +846,7 @@ nav {
 .form-content {
   width: 100%;
   max-width: 680px;
+  padding-bottom: 20px;
 }
 
 .form-group {
