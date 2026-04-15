@@ -856,6 +856,7 @@ nav {
   gap: 4px; /* tighter */
   margin-bottom: 18px;
   width: 100%;
+  min-width: 0;
 }
 
 .form-group label {
@@ -880,12 +881,14 @@ nav {
   outline: none;
   transition: border-color 0.15s;
   width: 100%;
+  box-sizing: border-box
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: #1c1f2e;
+  
 }
 
 .form-group textarea {
