@@ -868,8 +868,8 @@ nav {
   color: #1c1f2e;
   background: #fff;
   border: 1.5px solid rgba(28,31,46,0.15);
-  border-radius: 8px;
-  padding: 11px 14px;
+  border-radius: 10px;
+  padding: 13px 16px;
   outline: none;
   transition: border-color 0.15s;
   width: 100%;
@@ -898,12 +898,12 @@ nav {
   background: #1c1f2e;
   color: #ffffcb;
   font-family: "Sora", sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 12px 28px;
-  border-radius: 8px;
+  padding: 14px 32px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   transition: background 0.15s, letter-spacing 0.2s, padding 0.2s;
@@ -917,7 +917,8 @@ nav {
 }
 
 @media (max-width: 600px) {
-  .form-row { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; 
+  }
 }
 
 @media (min-width: 900px) {
