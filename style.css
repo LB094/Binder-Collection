@@ -895,7 +895,7 @@ nav {
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px; /* tighter spacing */
+  gap: 14px; 
 }
 
 .form-submit {
@@ -912,7 +912,7 @@ nav {
   border: none;
   cursor: pointer;
   transition: background 0.15s, letter-spacing 0.2s;
-  margin: 16px auto 0; /* centered */
+  margin: 24px auto 40px;
 }
 
 .form-submit:hover {
