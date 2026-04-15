@@ -843,6 +843,10 @@ nav {
   margin-top: 3px;
   font-style: normal;
 }
+.form-content {
+  width: 100%;
+  max-width: 680px;
+}
 
 .form-group {
   display: flex;
