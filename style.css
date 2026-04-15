@@ -855,6 +855,7 @@ nav {
   flex-direction: column;
   gap: 4px; /* tighter */
   margin-bottom: 18px;
+  width: 100%;
 }
 
 .form-group label {
@@ -895,7 +896,7 @@ nav {
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px; 
+  gap: 16px; 
 }
 
 .form-submit {
